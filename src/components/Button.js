@@ -7,6 +7,10 @@ function Button(props) {
         className += ' btn-primary'
     }
 
+    if (props.magic) {
+        className += ' btn-rainbow'
+    }
+
     return (
         <button className={ className }>
             { props.title }
