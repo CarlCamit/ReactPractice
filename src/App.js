@@ -12,8 +12,10 @@ class App extends Component {
 
         <Emoji />
         <Emoji cat />
-        <Emoji sad />
-        <Emoji cat sad />
+        <Emoji emotion='sad' />
+        <Emoji cat emotion='sad' />
+        <Emoji emotion='love' />
+        <Emoji cat emotion='love' />
 
         <br />
 
