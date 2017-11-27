@@ -13,7 +13,7 @@ function Button({ title, primary = false, magic = false }) {
 
     return (
         <button className={ className }>
-            { props.title }
+            { title }
         </button>
     )
 }
