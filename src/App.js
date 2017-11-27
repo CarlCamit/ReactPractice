@@ -27,7 +27,7 @@ class App extends Component {
           { ' ' }
           Sign Up
         </Button>
-        <Button children='Enter Competition' magic />
+        <Button children='Enter Competition' magic href='/competition' />
         <p>Learning how to use react.js</p>
         <ul>
           <li>First</li>

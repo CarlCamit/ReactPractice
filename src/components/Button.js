@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({ children, primary = false, magic = false }) {
+function Button({ children, primary = false, magic = false, href }) {
     let className = 'btn'
 
     if (primary) {
@@ -9,6 +9,16 @@ function Button({ children, primary = false, magic = false }) {
 
     if (magic) {
         className += ' btn-rainbow'
+    }
+
+    const renderAnchor = !!href
+
+    if (renderAnchor) {
+        return (
+            <a href={ href } className={ className }>
+                { children }
+            </a>
+        )
     }
 
     return (
