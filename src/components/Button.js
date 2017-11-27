@@ -1,8 +1,10 @@
 import React from 'react'
 
 function Button(props) {
+    let className = 'btn'
+
     return (
-        <button>
+        <button className={ className }>
             { props.title }
         </button>
     )
