@@ -20,6 +20,13 @@ function Button({ children, primary = false, magic = false, href }) {
             </a>
         )
     }
+    else {
+        return (
+            <button className={ className }>
+                { children }
+            </button>
+        )
+    }
 
     return (
         <button className={ className }>
