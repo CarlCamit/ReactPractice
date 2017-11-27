@@ -4,15 +4,25 @@ function Emoji({ sad = false, cat = false }) {
     let text = ''
 
     if (cat) {
-        text = '😸'
+        if (sad) {
+            text = '😿'
+        }
+        else {
+            text = '😸'
+        }
     }
     else {
-        text = '😊'
+        if (sad) {
+            text = '😢'
+        }
+        else {
+            text = '😊'
+        }
     }
 
     return (
         <span>
-            
+            { text }
         </span>
     )
 }

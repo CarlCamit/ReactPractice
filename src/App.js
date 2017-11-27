@@ -2,12 +2,21 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button'
+import Emoji from './components/Emoji'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>Starting React</h1>
+
+        <Emoji />
+        <Emoji cat />
+        <Emoji sad />
+        <Emoji cat sad />
+
+        <br />
+
         <Button title='Find Flights' primary />
         <Button title='Sign Up' />
         <Button title='Enter Competition' magic />
