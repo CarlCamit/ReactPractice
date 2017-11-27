@@ -11,28 +11,35 @@ function Button({ children, primary = false, magic = false, href }) {
         className += ' btn-rainbow'
     }
 
-    const renderAnchor = !!href
-
-    if (renderAnchor) {
-        return (
-            <a href={ href } className={ className }>
-                { children }
-            </a>
-        )
-    }
-    else {
-        return (
-            <button className={ className }>
-                { children }
-            </button>
-        )
-    }
+    const renderLink = !!href
+    const Component = renderLink ? 'a' : 'button'
 
     return (
-        <button className={ className }>
+        <Component href={ href } className={ className }>
             { children }
-        </button>
+        </Component>
     )
+
+    // if (renderAnchor) {
+    //     return (
+    //         <a href={ href } className={ className }>
+    //             { children }
+    //         </a>
+    //     )
+    // }
+    // else {
+    //     return (
+    //         <button className={ className }>
+    //             { children }
+    //         </button>
+    //     )
+    // }
+
+    // return (
+    //     <button className={ className }>
+    //         { children }
+    //     </button>
+    // )
 }
 
 export default Button
