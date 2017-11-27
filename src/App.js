@@ -8,9 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Starting React</h1>
-        <Button title='Find Flights' primary={true} />
+        <Button title='Find Flights' primary />
         <Button title='Sign Up' />
-        <Button title='Enter Competition' magic={true} />
+        <Button title='Enter Competition' magic />
         <p>Learning how to use react.js</p>
         <ul>
           <li>First</li>
