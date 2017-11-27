@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({ title, primary = false, magic = false }) {
+function Button({ children, primary = false, magic = false }) {
     let className = 'btn'
 
     if (primary) {
@@ -13,7 +13,7 @@ function Button({ title, primary = false, magic = false }) {
 
     return (
         <button className={ className }>
-            { title }
+            { children }
         </button>
     )
 }

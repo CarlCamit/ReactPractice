@@ -19,9 +19,15 @@ class App extends Component {
 
         <br />
 
-        <Button title='Find Flights' primary />
-        <Button title='Sign Up' />
-        <Button title='Enter Competition' magic />
+        <Button primary>
+          Find Flights
+        </Button>
+        <Button>
+          <Emoji cat emotion='love'/>
+          { ' ' }
+          Sign Up
+        </Button>
+        <Button children='Enter Competition' magic />
         <p>Learning how to use react.js</p>
         <ul>
           <li>First</li>
